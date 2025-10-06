@@ -20,8 +20,8 @@ const  Products = () => {
     
     return (
     <>
-    <div className="row row2">
-        
+    <div className="row row2 align-content-stretch justify-content-center containerMy p-4">
+        <h2>I prodotti disponibili:</h2>
         {prodotto.map((prodotto) => (
             <CardProdotto
             key={prodotto.id}

@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-image: url(https://server.wallpaperalchemy.com/storage/wallpapers/68/vibrant-neon-wave-wallpaper.jpg);
+  object-fit: cover;
 }
 .cardMod {
   width: 250px;
@@ -12,7 +17,31 @@
   height: 250px;
 }
 .row2 {
-  display: flex;
-  align-items: stretch;
   gap: 10px;
+  margin: 0 auto;
+}
+.navBarMod {
+  background-color: #C8F2F0;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px #1e3835;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.containerMy {
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 2px solid black;
+  box-shadow: 20px 20px 5px #1e3835;
+  background-color: #C8F2F0;
+}
+.navBarMod li a{
+  background-color: #92CBC4;
+  border-radius: 10px;
+  padding: 5px;
+}
+.navBarMod ul li a.active {
+  background-color: #EFFAD8;
+}
+.navBarMod ul li a:hover {
+  background-color: #72B1A8;
 }
