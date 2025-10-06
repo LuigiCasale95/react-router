@@ -1,6 +1,11 @@
-import Navbar from './components/Navbar'
-import { BrowserRouter, Routes , Route } from 'react-router-dom'
 import './App.css'
+
+import { BrowserRouter, Routes , Route } from 'react-router-dom'
+
+/* Import componenti */
+import Navbar from './components/Navbar'
+/* Layout */
+import DefaultLayout from './DefaultLayout'
 
 /* import delle pagine di riferimento */
 import Home from './pages/Home'
@@ -13,9 +18,12 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/Home" element= {<Home/>} />
-        <Route path="/ChiSiamo" element= {<ChiSiamo/>} />
-        <Route path="/Products" element= {<Products/>} />
+        <Route element={<DefaultLayout/>}>        
+          <Route path="/" element={<Home/>} />
+          <Route path="/ChiSiamo" element={<ChiSiamo/>} />
+          <Route path="/Products" element={<Products/>} />        
+        </Route>
+
       </Routes>
     </BrowserRouter>
     </>
