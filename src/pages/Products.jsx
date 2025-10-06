@@ -20,13 +20,14 @@ const  Products = () => {
     
     return (
     <>
-    <div className="row">
+    <div className="row row2">
         
         {prodotto.map((prodotto) => (
             <CardProdotto
             key={prodotto.id}
             title={prodotto.title}
             src={prodotto.image}
+            price={prodotto.price}
             />
         ))}
     </div>
