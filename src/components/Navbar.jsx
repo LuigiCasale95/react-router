@@ -8,9 +8,9 @@ const  Navbar = () => {
     <>
     <div className="navBarMod">
         <ul className="d-flex justify-content-center gap-4 p-1">
-            <li><a><NavLink to="/" className="nav-link">Home</NavLink></a></li>
-            <li><a><NavLink to="/Products" className="nav-link" >Prodotti</NavLink> </a></li>
-            <li><a><NavLink to="/ChiSiamo" className="nav-link" >Chi Siamo</NavLink> </a></li>
+            <li><NavLink to="/" className="nav-link">Home</NavLink></li>
+            <li><NavLink to="/Products" className="nav-link" >Prodotti</NavLink></li>
+            <li><NavLink to="/ChiSiamo" className="nav-link" >Chi Siamo</NavLink></li>
         </ul>
     </div>
     </>

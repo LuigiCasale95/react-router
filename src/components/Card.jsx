@@ -1,6 +1,9 @@
+/* Import Link */
+import { Link } from "react-router-dom"
+
 const  CardProdotto = (props) => {
     
-    const {src, title, price} = props
+    const {src, title, price , id} = props
 
     return (
         
@@ -12,7 +15,8 @@ const  CardProdotto = (props) => {
                     
                     <span class=""> <i class="fa-solid fa-euro-sign"></i> {price} </span>
                 </div>
-            
+                
+            <Link to={`/Products/${id}`} >VISUALIZZA IN DETTAGLIO</Link>
         </div>
 
     )

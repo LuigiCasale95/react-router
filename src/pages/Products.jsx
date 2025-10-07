@@ -24,7 +24,8 @@ const  Products = () => {
         <h2>I prodotti disponibili:</h2>
         {prodotto.map((prodotto) => (
             <CardProdotto
-            key={prodotto.id}
+            key={prodotto.id} 
+            id={prodotto.id}
             title={prodotto.title}
             src={prodotto.image}
             price={prodotto.price}

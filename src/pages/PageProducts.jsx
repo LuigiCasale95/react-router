@@ -3,11 +3,13 @@ import { useParams } from "react-router-dom"
 
 const  PageProduct = () => {
     
-    const { id } = useParams
+    const { id } = useParams();
 
     return (
         
-        <div>Pagina Del prodotto N {id} </div>
+        <div className="containerMy">
+            Pagina Del prodotto N {id} 
+        </div>
 
     )
 }
