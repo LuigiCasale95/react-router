@@ -6,7 +6,7 @@ const  Navbar = () => {
     
     return (
     <>
-    <div className="navBarMod">
+    <div className="navBarMod p-1">
         <ul className="d-flex justify-content-center gap-4 p-1">
             <li><NavLink to="/" className="nav-link">Home</NavLink></li>
             <li><NavLink to="/Products" className="nav-link" >Prodotti</NavLink></li>
